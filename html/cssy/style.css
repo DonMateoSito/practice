@@ -1,0 +1,82 @@
+body
+{
+    margin:0;
+    background-color: rgb(20, 22, 31);
+    font-family: 'Open Sans', sans-serif;
+}
+.container
+{
+    margin-right: auto;
+    margin-left: auto;
+    width:1000px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.postcard
+{
+    display: inline-block;
+    width: 460 px;
+    text-align: center;
+    padding:5px;
+}
+p
+{
+    font-size: 22px;
+    color:white;
+    text-align:center ;
+    
+    
+}
+h1
+{
+    color: #39a5f1;
+    font-weight: 400;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+a:link
+{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited
+{
+    color:#fff;
+}
+a:hover
+{
+    color:#fff;
+}
+a:active
+{
+    color:#fff;
+}
+.photo1
+{
+    width: 450px;
+}
+.photo2
+{
+    width: 450px;
+}
+.photo3
+{
+    width: 450px;
+}
+.photo4
+{
+    width: 450px;
+}
+.photo5
+{
+    width: 450px;
+}
+.photo6
+{
+    width: 450px;
+}

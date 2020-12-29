@@ -1,0 +1,98 @@
+/*
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Staatliches', cursive;
+
+*/
+
+body
+{
+    margin: 0;
+    background-color: rgb(40, 100, 100);
+    font-family: 'Open Sans', sans-serif;
+}
+header h1
+{
+    background-color: darkorange;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Staatliches', cursive; !important
+    width: 100%;
+    
+    
+}
+header p
+{
+    font-size: 1.5em;
+    color:darkorange;
+    text-align: center;
+    padding:15px;
+}
+section header
+{
+    
+    background-color: rgb(31, 77, 77);;
+}
+.col
+{
+    padding:10px;
+    display: inline-block;
+    border:1px solid black;
+}
+.col h3
+{
+    text-align: center;
+    font-size: 32px;
+    
+}
+footer{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background-color: indigo;
+    color:white;
+    text-align: center;
+}
+footer p
+{
+    width: 100%;
+    font-size: 25px;
+    background-color: rgb(90, 7, 149);
+    padding: 20px 0  20px 0;
+    margin:0;
+    height: 40px;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.socials
+{
+    display: inline-block;
+    padding:10px;
+    font-size: 20px;
+    
+}
+#fb
+{
+    width: 100%;
+    
+}
+#ins
+{
+    width: 100%;
+   
+}
+#snapchat
+{
+    width: 100%;
+    
+}
+#spoti
+{
+    width: 100%;
+    
+}

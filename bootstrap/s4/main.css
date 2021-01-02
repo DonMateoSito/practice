@@ -1,0 +1,41 @@
+body{
+    margin:0px;
+}
+header{
+    width: 100%;
+    height: auto;
+    
+}
+header img{
+    position: relative;
+    left:50%;
+   
+    transform: translate(-50%);
+}
+nav{
+    width: 100%;
+    background-color: blue;
+    color:white;
+    
+    text-align: center;
+    margin:20px 0 20px 0;
+}
+nav ul
+{
+    height: 50px;
+    margin:auto;
+}
+nav ul>li{
+    
+    display: inline;
+    margin: auto;
+    padding: 20px;
+    border-right:solid 1px white;
+    padding:10px;
+    
+    
+}
+section{
+    height: 100vh;
+    text-align: center;
+}

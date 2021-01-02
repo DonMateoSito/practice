@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+
+.uno
+{
+    background-color: red;
+    position: sticky;
+    top:5px;
+}
+.drugi
+{
+    
+    background-color: blue;
+}
+.trzeci
+{
+    
+    background-color: green;
+}
+p
+{
+    width: 100%;
+    height: 10%;
+    
+    margin-top: 10px;
+}
+.plpl
+{
+    background-color: aquamarine;
+    height: 100vh;
+}

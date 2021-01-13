@@ -1,12 +1,6 @@
-koty= []
-
-
-kotAm = int(input('Podaj ile kotów chcesz dodać? '))
-for i in range(kotAm):
-    nazwa = input('Podaj imie kota: ')
-    koty = koty + [nazwa]
-
-
-    
-
-
+pets = ['dog','cat','cow','pig']
+ques = input('Podaj imie zwierzaka: ')
+if ques not in pets:
+    print('Nie ma takiego zwierzaka. ')
+else:
+    print(ques +' ma się dobrze!')

@@ -1,1 +1,2 @@
-newString = ''
+
+        if i in inventory.keys():

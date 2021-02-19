@@ -1,3 +1,0 @@
-LAlalalalsf;lnsadjnasdfljn
-twoja stara 
-

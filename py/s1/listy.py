@@ -1,4 +1,6 @@
-num = [1,21,35,42,54]
-print(num)
-num.insert(2,69)
-print(num)
+#1
+# SŁOWNIKI
+#    listy = {1:'a',3:'c',2:'b'}
+#    print(sorted(listy))
+
+#2

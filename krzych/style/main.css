@@ -3,42 +3,44 @@
 fonty:
 
 font-family: 'Open Sans', sans-serif;
+
+font-family: 'Roboto', sans-serif;
 */
 
 body{
-    background-color: #e6e6e6;
     margin:0;
 }
-
-
 nav{
-    height: 40px;
-    padding:10px;
+    height: 60px;
+    padding:5px;
     text-align: center;
+    position:sticky;
+    font-size: 2em;
     /*  dodaj jako tło ciemny kolor z opacity*/
-}
-.navAndImg{
-    background-image: url("/krzych/img/5.jpg");
-    background-size: cover;
-    max-height: 80%;
-    height: auto;
+    background-color: #D90429;
 }
 .welcome{
-    height: auto;
-   
-
+    height: 85vh;
 }
-.welcome h4{
-    margin-top:40px;
-    margin-bottom:50px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3em;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #e0e6e2;
-   
+.LogoAndBack{
+    background: url(../img/6.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 85vh;
+}
+
+.LogoAndBack img{
+    display: block;
+    position: absolute;
+    left:50%;
+    top:55%;
+    transform:translate(-50%,-55%);
+    height: 40vh;
+    width: 40vh;
+}
+
 }
 .welcome p{
     text-align: center;
@@ -58,30 +60,50 @@ nav{
     left:50%;
     margin-top:50px;
     margin-bottom:50px;
-
-    
     transform: translate(-50%);
 }
 .content{
-    background-color: #ffb60d;
-    
+    background-color: #2B2D42;
 }
 .content p[title="title"]{
-    font-size: 20px;
-}
-.text-about p{
-    font-size:15px;
+    font-size: clamp(20px,5vw,45px);
+    font-family: 'Roboto', sans-serif;
+    color:moccasin;
+    margin-left:5vh;
 }
 
+.text-about{
+    padding:10px;
+    margin: 10px;
+}
+
+.text-about p{
+    
+    font-size:clamp(15px,4vw,35px);
+    font-family: 'Roboto', sans-serif;
+    color: gray;
 }
 .ikony{
     padding:15px;
 }
 .ikona{
-    width: 100px; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
-    height: 100px;
+    width: 12vh; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
+    height: 12vh;
     background-color: lightyellow;
     display:inline-block;
     margin: 5px;
+}
 
+.porfolio{
+    background-color: #2B2D42 ;
+    color:white;
+    height: auto;
+}
+
+.slider img{
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }

@@ -1,9 +1,16 @@
 to do :
 
+https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429
+KOLORY
+
+
+
+
 PLAN:
-    1: NAWIGACJA
-        - DODAĆ CIEMNE TŁO Z OPACITY, DODAĆ BOOTSTRAP
-        - ZROBIĆ JAKIEŚ LOGO
+    1 : NAWIGACJA
+        - DODAĆ CIEMNE TŁO Z OPACITY,
+        - DODAĆ BOOTSTRAP
+        + ZROBIĆ JAKIEŚ LOGO
         - HIPERLINKI DO JAKIŚ 2/3 STRON
     2.  OPIS GŁÓWNY
         - DODAĆ COŚ BARDZIEJ AMBITNEGO
@@ -19,3 +26,14 @@ PLAN:
         - KTO Z NAMI PRACUJE
     6. KONTAKT
     7. PRAWA AUTORSKIE
+
+
+style:
+    -zmienic fonty, bo sie patrzeć nie da, dodać grupości i odstępy odpowiednie
+
+    czcionki fontello:
+        -facebook
+        -instagram
+        -email
+        -gumtree
+        -home

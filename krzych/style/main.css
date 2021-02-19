@@ -1,136 +1,87 @@
+
 /*
 fonty:
 
 font-family: 'Open Sans', sans-serif;
-font-family: 'Staatliches', cursive;
-
-
 */
-body
-{
-    background-color:#282528;
-    margin: 0;
-    color:white;
+
+body{
+    background-color: #e6e6e6;
+    margin:0;
 }
-.image img
-{
-    position: relative;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%);
+
+
+nav{
+    height: 40px;
+    padding:10px;
+    text-align: center;
+    /*  dodaj jako tło ciemny kolor z opacity*/
+}
+.navAndImg{
+    background-image: url("/krzych/img/5.jpg");
+    background-size: cover;
+    max-height: 80%;
+    height: auto;
+}
+.welcome{
+    height: auto;
+   
 
 }
-nav
-{
-    position: sticky !important;
-    top:0;
-    background-color: #ba292e;
-    z-index: 2;
-    
-}
-#about
-{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: auto;
-    width: 80%;
+.welcome h4{
+    margin-top:40px;
+    margin-bottom:50px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    border:1px solid white;
-    background-color: #944e1c;
-    font-size:2.5vh ;
-    padding:15px;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e0e6e2;
+   
 }
-.navbar a
-{
-    text-decoration: none;
-    color: #cccccc;
-    font-size: 24px;
+.welcome p{
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    color:#ffb60d;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+   
 }
-.projekty{
-    border:1px solid #282528;
-    background-color: #332c33;
+
+.welcome button{
+    display: block;
+    position: relative;
+    left:50%;
+    margin-top:50px;
+    margin-bottom:50px;
+
+    
+    transform: translate(-50%);
 }
-.projekty img
-{
-    height: auto;
-    width: 100%;
-    padding:10px;
-}
-.ph1
-{
-    transition: 0.3s ease-in-out;
+.content{
+    background-color: #ffb60d;
     
 }
-
-.ph2
-{
-    transition: 0.3s ease-in-out;
+.content p[title="title"]{
+    font-size: 20px;
 }
-.ph3
-{
-    transition: 0.3s ease-in-out;
-}
-.ph4
-{
-    transition: 0.3s ease-in-out;
-}
-.ph5
-{
-    transition: 0.3s ease-in-out;
-}
-.ph6
-{
-    transition: 0.3s ease-in-out;
+.text-about p{
+    font-size:15px;
 }
 
-.ph1:hover
-{
-opacity: 70%;
-transform: scale(0.9) rotate(-1deg);
+}
+.ikony{
+    padding:15px;
+}
+.ikona{
+    width: 100px; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
+    height: 100px;
+    background-color: lightyellow;
+    display:inline-block;
+    margin: 5px;
 
 }
-.ph2:hover
-{
-    opacity: 70%;
-    transform: scale(0.9) rotate(-1deg);
-}
-.ph3:hover
-{
-    opacity: 70%;
-    transform: scale(0.9) rotate(-1deg);
-}
-.ph4:hover
-{
-    opacity: 70%;
-    transform: scale(0.9) rotate(-1deg);
-}
-.ph5:hover
-{
-    opacity: 70%;
-    transform: scale(0.9) rotate(-1deg);
-}
-.ph6:hover
-{
-    opacity: 70%;
-    transform: scale(0.9) rotate(-1deg);
-}
-footer{
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-.footS{
-    background-color: black;
-}
-.socials
-{
-    font-size: 32px;
-    background-color:#282528 ;
-    color: white;
-}
-.socials a
-{
-    text-decoration: none;
-}
-

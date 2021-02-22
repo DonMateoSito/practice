@@ -15,6 +15,8 @@ nav{
     padding:5px;
     text-align: center;
     position:sticky;
+    position: -webkit-sticky;
+    top: 0  ;
     font-size: 2em;
     /*  dodaj jako tło ciemny kolor z opacity*/
     background-color: #D90429;
@@ -54,14 +56,6 @@ nav{
    
 }
 
-.welcome button{
-    display: block;
-    position: relative;
-    left:50%;
-    margin-top:50px;
-    margin-bottom:50px;
-    transform: translate(-50%);
-}
 .content{
     background-color: #2B2D42;
 }
@@ -87,8 +81,8 @@ nav{
     padding:15px;
 }
 .ikona{
-    width: 12vh; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
-    height: 12vh;
+    width: 8vh; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
+    height: 9vh;
     background-color: lightyellow;
     display:inline-block;
     margin: 5px;
@@ -99,6 +93,39 @@ nav{
     color:white;
     height: auto;
 }
+.aboutUs{
+    background-color: #EDF2F4;
+    height: auto;
+    font-size:clamp(15px,4vw,35px);
+    padding: 10px;
+}
+.aboutUs p[title='aboutUsTxt']{
+    margin-left: 3vh;
+    font-size: ;
+}
+.avatars{    
+    border: 1px solid;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.prof1{
+    border: 1px solid;
+
+}
+.prof1 img{
+    float:left;
+    width: 25vh;
+    height: 25vh;
+}
+.prof1 p{
+    float: left;
+    display: inline-block;
+}
+
+
+
 
 .slider img{
     display: block;

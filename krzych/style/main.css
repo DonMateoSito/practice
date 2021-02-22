@@ -1,35 +1,42 @@
 
-/*
-fonty:
-
-font-family: 'Open Sans', sans-serif;
-
-font-family: 'Roboto', sans-serif;
-
-
-*/
 :root{
-    --main-title-font: clamp(20px,5vw,45px);
-    --main-p-font: clamp(15px,4vw,35px);
-    --main-font-style:;
-
+    --main-title: clamp(20px,5vw,45px);
+    --main-font: clamp(15px,4vw,35px);
+    /* FONTS */
+    --main-font-style: 'Open Sans', sans-serif;
+    --sec-font:'Roboto', sans-serif;
+    /* COLOURS BG */
+    --col-red: #D90429;
+    --col-dark-red: #EF233C;
+    --col-white: #EDF2F4;
+    --col-gray: #8D99AE;
+    --col-darkgray: #535F75;
+    --col-dark: #2B2D42;
+    /* COLOURS FONT */
+    --col-font-fair: moccasin;
+    --col-font-yellow:#ffb60d;
+    --col-font-white:white;
 }
 
 body{
     margin:0;
     padding: 0;
 }
-nav{
-    height: 60px;
-    padding:5px;
-    text-align: center;
-    position:sticky;
-    position: -webkit-sticky;
-    top: 0  ;
-    font-size: 2em;
-    /*  dodaj jako tło ciemny kolor z opacity*/
-    background-color: #D90429;
+nav a{
+    font-size: clamp(20px,5vw,30px);
 }
+nav li{
+    text-align: center;
+    color:var(--col-font-white)
+
+
+}
+nav button{
+    border-radius: 50%;
+}
+
+
+
 .welcome{
     height: 85vh;
 }
@@ -48,8 +55,8 @@ nav{
     left:50%;
     top:55%;
     transform:translate(-50%,-55%);
-    height: 40vh;
-    width: 40vh;
+    height: 36vh;
+    width: 36vh;
 }
 
 }
@@ -59,19 +66,19 @@ nav{
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3em;
-    color:#ffb60d;
+    color:var(--col-font-yellow);
     font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--main-font);
    
 }
 
 .content{
-    background-color: #2B2D42;
+    background-color: var(--col-dark);
 }
 .content p[title="title"]{
-    font-size:var(--main-title-font) ;
+    font-size:var(--main-title) ;
     font-family: 'Roboto', sans-serif;
-    color:moccasin;
+    color:var(--col-font-fair);
     margin-left:5vh;
 }
 
@@ -82,7 +89,7 @@ nav{
 
 .text-about p{
     
-    font-size:var(--main-p-font);
+    font-size:var(--main-font);
     font-family: 'Roboto', sans-serif;
     color: gray;
 }
@@ -92,51 +99,58 @@ nav{
 .ikona{
     width: 8vh; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
     height: 9vh;
-    background-color: lightyellow;
+    background-color: var(--col-white);
     display:inline-block;
     margin: 5px;
 }
 
 .porfolio{
-    background-color: #2B2D42 ;
-    color:white;
+    background-color: var(--col-dark) ;
+    color:var(--col-font-white);
     height: auto;
 }
 .aboutUs{
-    background-color: #EDF2F4;
+    background-color: var(--col-white);
     height: auto;
-    font-size:clamp(15px,4vw,35px);
+    font-size:var(--sec-font);
+    font-weight: 0;
     padding: 10px;
+    font-family: var(--sec-font);
+    color:var(--col-darkgray)
 }
 .aboutUs p[title='aboutUsTxt']{
     margin-left: 3vh;
-    font-size:var(--main-title-font) ;
-}
-.avatars{    
-    border: 1px solid;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+    font-size:var(--main-title) ;
+    font-family: var(--main-font-style);
+    font-weight: 900;
 
+}
+
+.card{
+
+    width: auto;
+    position: relative;
+    border-radius: 15px;
     
 }
-.prof1{
-    border: 1px solid;
-
-}
-.prof1 img{
+.card img{
     object-fit: cover;
-    border-radius: 50%;
-    float:left;
-    width: 25vh;
-    height: 25vh;
+    display:inline-block;
+    width: 100%  ;
+    height: auto;
+    border-radius: 15px;
 }
-.prof1 p{
+.card p{
     text-align: center;
     padding: 10px;
-    float: left;
-    width: 50%;
+    
+    width: auto;
 }
+.card h2{
+    text-align: center;
+    padding:10px;
+}
+.
 
 
 

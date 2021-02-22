@@ -1,0 +1,9 @@
+:root{
+    --main-font: clamp(1rem, 5vw, 2rem);
+    --main-colour: #581900;
+}
+
+section{
+    font-size: var(--main-font);
+    color: var(--main-colour);
+}

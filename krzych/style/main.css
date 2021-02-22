@@ -5,10 +5,19 @@ fonty:
 font-family: 'Open Sans', sans-serif;
 
 font-family: 'Roboto', sans-serif;
+
+
 */
+:root{
+    --main-title-font: clamp(20px,5vw,45px);
+    --main-p-font: clamp(15px,4vw,35px);
+    --main-font-style:;
+
+}
 
 body{
     margin:0;
+    padding: 0;
 }
 nav{
     height: 60px;
@@ -60,7 +69,7 @@ nav{
     background-color: #2B2D42;
 }
 .content p[title="title"]{
-    font-size: clamp(20px,5vw,45px);
+    font-size:var(--main-title-font) ;
     font-family: 'Roboto', sans-serif;
     color:moccasin;
     margin-left:5vh;
@@ -73,7 +82,7 @@ nav{
 
 .text-about p{
     
-    font-size:clamp(15px,4vw,35px);
+    font-size:var(--main-p-font);
     font-family: 'Roboto', sans-serif;
     color: gray;
 }
@@ -101,13 +110,14 @@ nav{
 }
 .aboutUs p[title='aboutUsTxt']{
     margin-left: 3vh;
-    font-size: ;
+    font-size:var(--main-title-font) ;
 }
 .avatars{    
     border: 1px solid;
-    width: 70%;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
+
     
 }
 .prof1{
@@ -115,13 +125,17 @@ nav{
 
 }
 .prof1 img{
+    object-fit: cover;
+    border-radius: 50%;
     float:left;
     width: 25vh;
     height: 25vh;
 }
 .prof1 p{
+    text-align: center;
+    padding: 10px;
     float: left;
-    display: inline-block;
+    width: 50%;
 }
 
 

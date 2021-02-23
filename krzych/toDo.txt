@@ -9,6 +9,9 @@ ikonki potrzebne
     home
     email
     telefon(kontakt)
+    linkedin
+    gadu gadu
+
 corgan
 
 
@@ -33,7 +36,7 @@ PLAN:
         - KTO Z NAMI PRACUJE
         - BOOTSTRAP DO DODANIA PO 2/3 PROFILE NA JEDEN WIERSZ
     6. KONTAKT
-    7. PRAWA AUTORSKIE
+    7. PRAWA AUTORSKIE +
 
 
 style:

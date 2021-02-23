@@ -19,14 +19,10 @@
     --col-font-yellow:#ffb60d;
     --col-font-white:white;
 }
-
-body{
-    margin:0;
-    padding: 0;
-}
 nav a{
     font-size: clamp(20px,5vw,30px);
 }
+
 nav li{
     text-align: center;
     color:var(--col-font-white)
@@ -73,16 +69,23 @@ nav button{
     font-family: var(--main-font);
    
 }
-
+.main{
+    margin:0;
+}
 .content{
     background-color: var(--col-dark);
+    
 }
 .content p[title="title"]{
+
     font-size:var(--main-title) ;
     font-family: 'Roboto', sans-serif;
     color:var(--col-font-fair);
     margin-left:5vh;
+    margin-top: 5vh;
+
 }
+
 
 .text-about{
     padding:10px;
@@ -174,10 +177,13 @@ nav button{
     width: 75%;
 }
 footer{
+    position: relative;
+    bottom: 0;
     height: auto;
     background-color: var(--col-dark);
     margin: 0;
     padding: 0;
+    font-size: clamp(10px,4vw,15px);
 }
 footer a{
     font-size: clamp(10px,15,2rem);

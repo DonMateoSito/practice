@@ -19,6 +19,13 @@
     --col-font-yellow:#ffb60d;
     --col-font-white:white;
 }
+
+
+section{
+    padding: 0;
+    margin: 0;
+}
+
 nav a{
     font-size: clamp(20px,5vw,30px);
 }
@@ -32,8 +39,6 @@ nav li{
 nav button{
     border-radius: 50%;
 }
-
-
 
 .welcome{
     height: 85vh;
@@ -164,7 +169,7 @@ nav button{
     text-align: center;
     padding:10px;
 }
-.
+
 
 
 
@@ -176,23 +181,22 @@ nav button{
     margin-right: auto;
     width: 75%;
 }
-footer{
+.footer{
     position: relative;
     bottom: 0;
+    left:0;
     height: auto;
     background-color: var(--col-dark);
     margin: 0;
     padding: 0;
     font-size: clamp(10px,4vw,15px);
 }
-footer a{
+.footer a{
     font-size: clamp(10px,15,2rem);
     text-decoration: none;
     color:var(--col-white)
 }
 .socials{
-    padding:0;
-    margin: 0;
     color:var(--col-white);
     text-align: center;
     
@@ -201,7 +205,7 @@ footer a{
     width: 25%;
     background-color: var(--col-darker);    
     height: 10vh;
-    float:left;
+    display: inline-block;
     padding:3vh;
 }
 .fb:hover{
@@ -212,7 +216,7 @@ footer a{
     width: 25%;
     background-color: var(--col-darker); ;
     height: 10vh;
-    float:left;
+    display: inline-block;
     padding:3vh;
     
 }
@@ -224,7 +228,7 @@ footer a{
     width: 25%;
     background-color: var(--col-darker); ;
     height: 10vh;
-    float:left;
+    display: inline-block;
     padding:3vh;
 }
 .linin:hover{
@@ -234,12 +238,11 @@ footer a{
     width: 25%;
     background-color: var(--col-darker); ;
     height: 10vh;
-    float:left;
+    display: inline-block;
     padding:3vh;
 }
 .gg:hover{
     background-color: orange;
-    cursor:pointer;
 }
 .policy{
     background-color: var(--col-darkerer);

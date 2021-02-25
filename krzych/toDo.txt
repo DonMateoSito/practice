@@ -11,6 +11,10 @@ ikonki potrzebne
     telefon(kontakt)
     linkedin
     gadu gadu
+    telefon 
+    email
+    siedziba
+    
 
 corgan
 

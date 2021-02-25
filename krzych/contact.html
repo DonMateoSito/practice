@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="./style/main.css" type='text/css' rel='stylesheet' />
+    <link href="./style/contact.css" type='text/css' rel='stylesheet' />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .contact{
+            background: url("./img/contact.png") no-repeat center center ;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            height: 35vh;
+        }
+        .contact p{
+            font-size: clamp(30px, 20vw, 100px);
+            text-align: center;
+            color:white;    
+            padding: 0;
+            position: relative;
+            top: 20%;
+        }
+        .karta{
+            height: 30vh;
+            width:auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top:10vh;
+            text-align: center;
+        }
+        .karta p{
+            font-size: clamp(10px,4vw,25px);
+        }
+        .email{
+            background-color: red;
+            color:white;
+            border: transparent;
+            border-radius: 10px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding:5px;
+            font-size: 20px;
+        }
+        .telefon{
+            background-color: black;
+            color:white;
+            border: transparent;
+            border-radius: 10px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding:5px;
+            font-size: 20px;
+        }
+        .siedziby{
+            background-color: blue;
+            color: white;
+            border: transparent;
+            border-radius: 10px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding:5px;
+            font-size: 20px;
+        }
+        footer{
+            position: relative;
+            bottom: 0;
+            left:0;
+            height: auto;
+            background-color: var(--col-dark);
+            margin: 0;
+            padding: 0;
+            font-size: clamp(10px,4vw,15px);
+        }
+        footer a{
+            font-size: clamp(10px,15,2rem);
+            text-decoration: none;
+            color:var(--col-white)
+        }
+        .socials{
+            color:var(--col-white);
+            text-align: center;
+            
+        }
+        .fb{
+            width: 25%;
+            background-color: var(--col-darker);    
+            height: 10vh;
+            display: inline-block;
+            padding:3vh;
+        }
+        .fb:hover{
+            background-color: blue;
+            color:white`;
+        }
+        .insta{
+            width: 25%;
+            background-color: var(--col-darker); ;
+            height: 10vh;
+            display: inline-block;
+            padding:3vh;
+            
+        }
+        .insta:hover{
+            background-color: purple;
+            color:white;
+        }
+        .linin{
+            width: 25%;
+            background-color: var(--col-darker); ;
+            height: 10vh;
+            display: inline-block;
+            padding:3vh;
+        }
+        .linin:hover{
+            background-color: lightskyblue;
+        }
+        .gg{
+            width: 25%;
+            background-color: var(--col-darker); ;
+            height: 10vh;
+            display: inline-block;
+            padding:3vh;
+        }
+        .gg:hover{
+            background-color: orange;
+        }
+        .policy{
+            background-color: var(--col-darkerer);
+            color:white;
+            text-align: center;
+        }
+        iframe{
+            width: 100%;
+            height: 30vh;
+            margin-top:5vh;
+        }
+    </style>
+</head>
+<body>
+    <nav style='position:sticky;position:-webkit-sticky;top:0; z-index: 2;'
+        class='navbar bg-danger navbar-dark navbar-expand-lg'>
+        <a class='navbar-brand' href='./index.html'> HOME</a>
+    
+        <button class='navbar-toggler' type="button" data-toggle='collapse' aria-controls="mainmenu" aria-expanded="false"
+            aria-label="Przełącznik nawigacji" data-target='#mainMenu'>
+            menu
+        </button>
+        <div class='collapse navbar-collapse' id='mainMenu'>
+    
+            <ul class='navbar-nav'>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#'>PROJEKTY</a>
+                </li>
+    
+                <li class='nav-item'>
+                    <a class='nav-link' href='#'>O NAS</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='./contact.html'>KONTAKT</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#'>PO PRACY :D</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class='contact'>
+        <p>
+            KONTAKT
+        </p>
+    </div>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-12 col-md-6 col-lg-4'>
+                <div class='karta'>
+                    <p>
+                        IkonkaEmaila
+                    </p>
+                    <p>
+                        Napisz do nas
+                    </p>
+                    <p>
+                        <div class='email'>biuro.ksa@gmail.com</div>
+                    </p>
+                </div>
+            </div>
+            <div class='col-sm-12 col-md-6 col-lg-4'>
+                <div class='karta'>
+                    <p>
+                        IkonkaTelefonu
+                    </p>
+                    <p>
+                        Zadzwoń<br>
+                        <div class='telefon'>+48 510191840</div>
+                    </p>
+                </div>
+            </div>
+            <div class=" col-sm-12 col-md-12 col-lg-4">
+                <div class='karta'>
+                    <p>
+                        IkonkaSiedziby
+                    </p>
+                    <p>
+                        Spotkajmy się<br>
+                        <div class='siedziby'>Zawiercie, Bytom</div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.9986770219025!2d19.412678816066283!3d50.49698237948184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47172391fba3b681%3A0xa2326b23a2a27ec3!2sStaroszkolna%2011%2F7%2C%2042-400%20Zawiercie!5e0!3m2!1spl!2spl!4v1614247544619!5m2!1spl!2spl"
+            style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+
+
+
+    <footer>
+        <div class='socials'>
+            <div class='fb'>fb</div><!--
+            --><div class='insta'>instagram</div><!--
+            --><div class='linin'>linkedin</div><!--
+            --><div class='gg'>gadu</div><!--
+            --><div style='clear:both'></div>
+        </div>
+        <div class='policy'>
+            <p>
+                2021 KS-Architektura, wszystkie prawa zastrzeżone
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.8.3/umd/popper.min.js"
+        integrity="sha512-4dvO5Z/pIXt0GRvvrgYNjb+ihLc2thByw1vVsP8AbHh4GNaYatYqAUJVDqFvxCP3FTkzqnqloRa10UVtxkb5sQ=="
+        crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>

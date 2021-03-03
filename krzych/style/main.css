@@ -94,7 +94,7 @@ nav button{
 
 .text-about{
     padding:10px;
-    margin: 10px;
+
 }
 
 .text-about p{
@@ -185,7 +185,7 @@ nav button{
     position: relative;
     bottom: 0;
     left:0;
-    height: auto;
+    height: 25px;
     background-color: var(--col-dark);
     margin: 0;
     padding: 0;

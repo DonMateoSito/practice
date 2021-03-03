@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
 
     <style>
+        :root{
+            --pink: #c21e56;
+        }
         body{
             margin: 0;
         }
@@ -37,23 +40,24 @@
             top: 20%;
         }
         .karta{
-            height: 30vh;
+            height: auto;
             width:auto;
             border: 1px solid black;
             border-radius: 10px;
-            margin-top:10vh;
+            margin-top:4vh;
             text-align: center;
             font-family:  'Roboto', sans-serif;
         }
         .karta p{
             font-size: clamp(20px,4vw,30px);
+
         }
         .email{
             background-color: #EF233C;
             color:white;
             border: transparent;
             border-radius: 10px;
-            width: 60%;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
             padding:5px;
@@ -64,20 +68,20 @@
             color:white;
             border: transparent;
             border-radius: 10px;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
+            width: auto;
+            margin-left: 10vh;
+            margin-right: 10vh;
             padding:5px;
-            font-size: 20px;
+            font-size: clamp(10px,20vh, 20px);
         }
         .siedziby{
             background-color: #EF233C;
             color: white;
             border: transparent;
             border-radius: 10px;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
+             width: auto;
+            margin-left: 10vh;
+            margin-right: 10vh;
             padding:5px;
             font-size: 20px;
         }
@@ -154,6 +158,51 @@
             height: 30vh;
             margin-top:5vh;
         }
+        .zaw{
+            display: none;
+        }
+        a[title='zaw']:hover + .zaw{
+            display: block;
+            position: relative;
+            left: 0;
+            background-color: var(--pink);
+        }
+        .byt{
+            display: none;
+        }
+        a[title='byt']:hover + .byt{
+            display: block;
+            position: relative;
+            left: 0;
+            background-color: var(--pink);
+        }
+        .war{
+            display: none;
+        }
+        a[title='war']:hover + .war{
+            display: block;
+            position: relative;
+            left: 0;
+            background-color: var(--pink);
+        }
+        .poz{
+            display: none;
+        }
+        a[title='poz']:hover + .poz{
+            display: block;
+            position: relative;
+            left: 0;
+            background-color: var(--pink);
+        }
+        .szcze{
+            display: none;
+        }
+        a[title='szcze']:hover + .szcze{
+            display: block;
+            position: relative;
+            left:0;
+            background-color: var(--pink);
+        }
     </style>
 </head>
 <body>
@@ -223,11 +272,27 @@
                     <p>
                         Spotkajmy się<br>
                         <div class='siedziby'>
-                            Zawiercie <br> 
-                            Bytom<br>
-                            Warszawa<br>
-                            Poznać<br>
-                            Szczecin<br>
+                            <a title='zaw'>Zawiercie<br></a>
+                            <div class='zaw'>
+                                ul. Staropolska 11/7
+                                
+                            </div>
+                            <a title='byt'>Bytom<br></a>
+                            <div class='byt'>
+                                ul.Górnośląska 11/7
+                            </div>
+                            <a title='war'>Warszawa<br></a>
+                            <div class='war'>
+                                ul.Wiejska 11
+                            </div>
+                            <a title='poz'>Poznań<br></a>
+                            <div class='poz'>
+                                ul. Staropolska 22
+                            </div>
+                            <a title='szcze'>Szczecin<br></a>
+                            <div class='szcze'>
+                                ul. Niemiecka 12
+                            </div>
                         </div>
                         
                     </p>

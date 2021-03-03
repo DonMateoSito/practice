@@ -20,31 +20,26 @@
     --col-font-white:white;
 }
 
-
-section{
-    padding: 0;
+body{
+    background-color: transparent;
     margin: 0;
+    padding: 0;
 }
-
 nav a{
     font-size: clamp(20px,5vw,30px);
 }
-
 nav li{
     text-align: center;
     color:var(--col-font-white)
-
-
 }
 nav button{
     border-radius: 50%;
 }
-
 .welcome{
     height: 85vh;
 }
 .LogoAndBack{
-    background: url(../img/6.jpg) no-repeat center center fixed;
+    background: url(../img/back.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -74,9 +69,7 @@ nav button{
     font-family: var(--main-font);
    
 }
-.main{
-    margin:0;
-}
+
 .content{
     background-color: var(--col-dark);
     
@@ -103,16 +96,8 @@ nav button{
     font-family: 'Roboto', sans-serif;
     color: gray;
 }
-.ikony{
-    padding:15px;
-}
-.ikona{
-    width: 8vh; /*     ZASTOSUJ ZŁOTY PODZIAŁ*/
-    height: 9vh;
-    background-color: var(--col-white);
-    display:inline-block;
-    margin: 5px;
-}
+
+
 
 .porfolio{
     background-color: var(--col-dark) ;
@@ -172,8 +157,6 @@ nav button{
 
 
 
-
-
 .slider img{
     display: block;
     height: auto;
@@ -182,70 +165,22 @@ nav button{
     width: 75%;
 }
 .footer{
-    position: relative;
-    bottom: 0;
-    left:0;
-    height: 25px;
-    background-color: var(--col-dark);
-    margin: 0;
-    padding: 0;
-    font-size: clamp(10px,4vw,15px);
+            background-color: var(--col-dark);
+            font-size: clamp(10px,4vw,15px);
+            width: 100%;
+            text-align: center;
 }
 .footer a{
-    font-size: clamp(10px,15,2rem);
+    font-size: clamp(10px,6vw,30px);
     text-decoration: none;
-    color:var(--col-white)
-}
-.socials{
     color:var(--col-white);
-    text-align: center;
-    
 }
-.fb{
-    width: 25%;
-    background-color: var(--col-darker);    
-    height: 10vh;
-    display: inline-block;
-    padding:3vh;
-}
-.fb:hover{
-    background-color: blue;
-    color:white`;
-}
-.insta{
-    width: 25%;
-    background-color: var(--col-darker); ;
-    height: 10vh;
-    display: inline-block;
-    padding:3vh;
-    
-}
-.insta:hover{
-    background-color: purple;
-    color:white;
-}
-.linin{
-    width: 25%;
-    background-color: var(--col-darker); ;
-    height: 10vh;
-    display: inline-block;
-    padding:3vh;
-}
-.linin:hover{
-    background-color: lightskyblue;
-}
-.gg{
-    width: 25%;
-    background-color: var(--col-darker); ;
-    height: 10vh;
-    display: inline-block;
-    padding:3vh;
-}
-.gg:hover{
-    background-color: orange;
-}
+
 .policy{
     background-color: var(--col-darkerer);
     color:white;
     text-align: center;
+    height: 35px;
+    
+
 }

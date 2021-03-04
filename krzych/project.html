@@ -105,10 +105,24 @@
             top:65%;
             
         }
+        section{
+            background-color: #2B2D42;
+            padding: 2rem;
+        }
+        section h2{
+            font-size: clamp(30px,10vw,50px);
+            color:white;
+            text-align: center;
+        }
+        section p{
+            font-size: clamp(15px,5vw,25px);
+            color: white;
+            opacity: 0.8;
+        }
     </STYLE>
 </head>
 <body>
-    <nav style='position:sticky;position:-webkit-sticky;top:0; z-index: 3;'
+    <nav id='navbar' style='position:sticky;top:0;width:100%;z-index: 3; transition: top 0.3s;'
         class='navbar bg-danger navbar-dark navbar-expand-lg'>
         <a class='navbar-brand' href='./index.html'> HOME</a>
     
@@ -141,6 +155,14 @@
         </p>
         <!--Photo by <a href="/photographer/ximes-34741">stefano franzin</a> from <a href="https://freeimages.com/">FreeImages</a>-->
     </header>
+    <section>
+        <h2>
+            Zobacz niektóre z naszych projektów
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum repellendus sunt. Consequatur numquam facere deleniti libero minus aspernatur, quo quibusdam, ab dignissimos incidunt cum omnis saepe illo architecto possimus.
+        </p>
+    </section>
     <main>
         <div class='project-no1'>
             <button class='project-no1-open' id='open-card'>
@@ -192,7 +214,18 @@
             });
         });
     </script>
-
+    <script>
+        var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-95px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

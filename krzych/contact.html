@@ -164,7 +164,7 @@
     </style>
 </head>
 <body>
-    <nav style='position:sticky;position:-webkit-sticky;top:0; z-index: 2;'
+    <nav id='navbar' style='position:sticky;position:-webkit-sticky;top:0; z-index: 2;  transition: top 0.3s;'
         class='navbar bg-danger navbar-dark navbar-expand-lg'>
         <a class='navbar-brand' href='./index.html'> HOME</a>
     
@@ -272,6 +272,18 @@
             </p>
         </div>
     </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-95px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
     <script>
         jQuery(document).ready(function () {
                 jQuery('#zawHide').on('click', function (event) {

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJEKTY | KS-Architektura</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="./style/main.css" type='text/css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <STYLE>
+        .aboutUs{
+            background: url("./img/project2.jpg") no-repeat center center ;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            height: 35vh;
+        }
+        .aboutUs p{
+            font-size: clamp(30px, 16vw, 100px);
+            text-align: center;
+            color:white;    
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .project-no1{
+            background: url("./img/project-home1.jpg") no-repeat center center ;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            height: clamp(500px,80vh,1000px);
+            position: relative;
+            
+        }
+        .project-no1 img{
+            display: block;
+            position: absolute;
+            z-index:1;
+            height: 80vh;
+        }
+        .project-in-card{
+            margin-top:5vh;
+            margin-left: 100px;
+            height:min(400px,60vh) ;
+            width: min(400px,60vw);
+            background-color: wheat;
+            padding:5px;
+            z-index: 2;
+            position: absolute;
+        }
+        .project-card{
+            border:1px black solid; 
+            height:min(390px,55vh)
+        }
+        .project-card hr{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .project-card p{
+            
+            margin-bottom: 1px
+        }
+        .project-card p[title='project-card-small-title']{
+            text-align: center;
+            font-size: clamp(10px, 4vw, 20px);
+        }
+        .project-card p[title='project-card-main-title']{
+            text-align: center;
+            font-size: clamp(15px, 5vw, 30px);
+            font-weight: 900;
+        }
+        .project-card p[title='project-card-details']{
+            text-align: left;
+            font-size: clamp(15px, 5vw, 25px);
+            font-weight: 600;
+            margin-left:20px;
+        }
+        .project-card p[title='project-card-paragrath']{
+            text-align: left;
+            font-size: clamp(15px, 3vw, 15px);
+            font-weight: 500;
+            margin-left:15px;
+        }
+        .project-no1-open{
+            position: absolute;
+            left:0;
+            top:50%;
+            
+        }
+        .project-no1-change{
+            position: absolute;
+            left:0;
+            top:65%;
+            
+        }
+    </STYLE>
+</head>
+<body>
+    <nav style='position:sticky;position:-webkit-sticky;top:0; z-index: 3;'
+        class='navbar bg-danger navbar-dark navbar-expand-lg'>
+        <a class='navbar-brand' href='./index.html'> HOME</a>
+    
+        <button class='navbar-toggler' type="button" data-toggle='collapse' aria-controls="mainmenu" aria-expanded="false"
+            aria-label="Przełącznik nawigacji" data-target='#mainMenu'>
+            menu
+        </button>
+        <div class='collapse navbar-collapse' id='mainMenu'>
+    
+            <ul class='navbar-nav'>
+                <li class='nav-item'>
+                    <a class='nav-link' href='./project.html' ALT='PROJEKTY'>PROJEKTY</a>
+                </li>
+    
+                <li class='nav-item'>
+                    <a class='nav-link' href='./about.html'ALT='O NAS'>O NAS</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='./contact.html' ALT='KONTAKT'>KONTAKT</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#' alt='PO PRACY'>PO PRACY :D</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class='aboutUs'>
+        <p>
+            PROJEKTY
+        </p>
+        <!--Photo by <a href="/photographer/ximes-34741">stefano franzin</a> from <a href="https://freeimages.com/">FreeImages</a>-->
+    </header>
+    <main>
+        <div class='project-no1'>
+            <button class='project-no1-open' id='open-card'>
+                info<br>projektu
+            </button>
+            <button class='project-no1-change'>
+                widok<br> projektu
+            </button>
+            <!--<img src='./img/project-home1.jpg'>-->
+            <div class='project-in-card' id='card'>
+                
+                <div class='project-card'>
+                    <p title='project-card-small-title'>
+                        Dom Jednorodzinny
+                    </p>
+                    <p title='project-card-main-title'>
+                        Exfalaraza Peperoni
+                    </p>
+                    <hr>
+                    
+                    <p title='project-card-details'>
+                        
+                    </p>
+                    <p title='project-card-paragrath'>
+                        Powieszchnia: 250m<sup>2</sup>
+                    </p>
+                    <p title='project-card-paragrath'>
+                        Pokoje: 5 (uzyj flexbox zeby sie zmieniały w prawo i do góry)
+                    </p>
+                    <p title='project-card-paragrath'>
+                        Parametr: watość
+                    </p>
+                    <p title='project-card-paragrath'>
+                        Parametr: watość
+                    </p>
+                    <p title='project-card-paragrath'>
+                        Parametr: watość
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#open-card').on('click', function (event) {
+                jQuery('#card').toggle('show');
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.8.3/umd/popper.min.js"
+        integrity="sha512-4dvO5Z/pIXt0GRvvrgYNjb+ihLc2thByw1vVsP8AbHh4GNaYatYqAUJVDqFvxCP3FTkzqnqloRa10UVtxkb5sQ=="
+        crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>

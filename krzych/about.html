@@ -21,6 +21,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #2B2D42;
+        }
+        main{
+            background-color: white;
+        }
         .aboutUs{
             background: url("./img/aboutUS2.jpg") no-repeat center center;
             -webkit-background-size: cover;
@@ -33,19 +41,37 @@
             text-align: center;
             color:white;    
             position: relative;
-            top: 20%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
         .container-fluid{
-            background-color: #dc3545!important;
-            height: 100vh;
+            background-color: #ec3545!important;
         }
         .info-bar-card{
             background-color: #ff003f;
+            border-radius: 15px;
+            padding: 10px;
+            margin:5px;
         }
         .info-bar-card-icon{
             font-size: clamp(20px,4vw,30px);
             text-align: center;
+            background-color:white; 
+            border-radius: 50%;
+            padding:5px;
+            height: 100px;
+            width: 105px;
+            margin-right: auto;
+            margin-left:auto;
         }
+        .info-bar-card-icon p{
+            
+            border-radius: 50%;
+            font-size: 30px;
+        }
+
+
         .info-bar-card p[title='info-bar-card-title']{
             font-weight: 900;
             font-size: 30px;
@@ -55,6 +81,75 @@
             font-size: 20px;
             color: rgb(255, 208, 190);
         }
+        .row{
+            margin-bottom: 5vh;
+        }
+        .titlebar{
+            font-size: clamp(30px,13vw,150px);
+            text-align: center;
+            margin-top:10vh;
+            margin-bottom:10vh;
+        }
+        .section-photo{
+            width: 100%;
+            height: 350px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            
+        }
+        .section-photo img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .section-text{
+            font-size: clamp(11px,5vw,30px);
+            padding: 20px;
+            margin:5px;
+            border-left: 3px black solid;
+        }
+        .section-text[id='section-text-right']{
+            font-size: clamp(11px,5vw,30px);
+            padding: 20px;
+            margin:5px;
+            border-right: 3px black solid;
+            border-left: none;
+
+        }
+        .section-text p[title='section-text-title']{
+            font-size:clamp(13px,6vw,35px);
+            font-weight: 900;
+        }
+        .section-text p[title='section-text-title-right']{
+            font-size:clamp(13px,6vw,35px);
+            font-weight: 900;
+            text-align: right;
+        }
+        .section-text p[title='section-text-paragrath-right']{
+            text-align: right;
+        }
+        #team{
+            background-color: #2B2D42;
+
+        }
+        .team-info p[title='team-info-title']{
+            font-size:clamp(30px,13vw,150px) ;
+            text-align: center;
+            color:white;
+            padding: 5vh;
+            margin-bottom:1vh;
+        }
+        .team-info p[title='team-info-paragrath']{
+            font-size:clamp(15px,5vw,30px) ;
+            color:white;
+            width: clamp(100px,90vw,1000px);
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+        
+
     </style>
 </head>
 <body>
@@ -92,16 +187,19 @@
         <!--Photo by <a href="/photographer/LeoSynapse-41665">Keith Syvinski</a> from <a href="https://freeimages.com/">FreeImages</a>-->
     </header>
     <section>
-        <div class='brand-info'>
+        <!--
+            <div class='brand-info'>
             <h3>
                 KS-Architektura
             </h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur nulla ex quia? Eos voluptatum fuga corporis cum,<br>
-                 nobis dicta aliquam consequuntur quidem dolorum quae reprehenderit libero, itaque eligendi officia!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur nulla ex quia? Eos voluptatum fuga
+                corporis cum,<br>
+                nobis dicta aliquam consequuntur quidem dolorum quae reprehenderit libero, itaque eligendi officia!<br>
             </p>
-
+        
         </div>
+        -->
     </section>
     <main>
         <header>
@@ -110,7 +208,9 @@
                     <div class='col-sm-12 col-md-6 col-lg-3'>
                         <div class='info-bar-card'>
                             <div class='info-bar-card-icon'>
-                                Ikonka_pomysł
+                                <p>
+                                    Icon
+                                </p>
                             </div>
                             <p title='info-bar-card-title'>
                                 Pomysłowość
@@ -123,7 +223,9 @@
                     <div class='col-sm-12 col-md-6 col-lg-3'>
                         <div class='info-bar-card'>
                             <div class='info-bar-card-icon'>
-                                Ikonka_Doświatczenie
+                                <p>
+                                    Icon
+                                </p>
                             </div>
                             <p title='info-bar-card-title'>
                                 Doświatczenie
@@ -138,7 +240,9 @@
                     <div class='col-sm-12 col-md-6 col-lg-3'>
                         <div class='info-bar-card'>
                             <div class='info-bar-card-icon'>
-                                Ikonka_zegar
+                                <p>
+                                    Icon
+                                </p>
                             </div>
                             <p title='info-bar-card-title'>
                                 Zawsze na czas
@@ -153,7 +257,7 @@
                     <div class='col-sm-12 col-md-6 col-lg-3'>
                         <div class='info-bar-card'>
                             <div class='info-bar-card-icon'>
-                                Ikonka_happy_smile
+                                Icon
                             </div>
                             <p title='info-bar-card-title'>
                                 Zadowoleni klienci
@@ -168,7 +272,170 @@
                 </div>
             </div>
         </header>
+        <section>
+            <div class='titlebar'>
+                <p>
+                    Nie tylko biuro architektyczne,
+                </p>
+            </div>
+            <div class='container' id='section'>
+                <div class='row'>
+                    <div class='col-sm-12 col-md-6'>
+                        <div class='section-photo'>
+                            <img src='./img/real-estate.jpg'> <!--Photo by <a href="/photographer/svilen001-32617">Svilen Milev</a> from <a href="https://freeimages.com/">FreeImages</a>-->
+                        </div>
+                    </div>
+                    <div class='col-sm-12 col-md-6'>
+                        <div class='section-text'>
+                            <p title='section-text-title'>
+                                Nieruchomości
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro modi tempora unde dolorem provident laudantium? Expedita animi mollitia reiciendis exercitationem libero laboriosam dolor ab cum aliquid, accusamus fuga nostrum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-12 col-md-6'>
+                        <div class='section-text' id='section-text-right'>
+                            <p title='section-text-title-right'>
+                                Budownictwo
+                            </p>
+                            <p title='section-text-paragrath-right'>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro modi tempora unde dolorem provident
+                                laudantium? Expedita animi mollitia reiciendis exercitationem libero laboriosam dolor ab cum aliquid,
+                                accusamus fuga nostrum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='col-sm-12 col-md-6'>
+                        <div class='section-photo'>
+                            <img src='./img/building-site.jpg'> <!--Photo by <a href="/photographer/zeafonso-51309">Afonso Lima</a> from <a href="https://freeimages.com/">FreeImages</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-12 col-md-6'>
+                        <div class='section-photo'>
+                            <img src='./img/copier.jpg'> <!--Photo by <a href="/photographer/weloo-37082">weloo</a> from <a href="https://freeimages.com/">FreeImages</a>-->
+                        </div>
+                    </div>
+                    <div class='col-sm-12 col-md-6'>
+                        <div class='section-text'>
+                            <p title='section-text-title'>
+                                Xero, druk wielkoformatowy, usługi introligatorskie
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id porro modi tempora unde dolorem provident
+                                laudantium? Expedita animi mollitia reiciendis exercitationem libero laboriosam dolor ab cum aliquid,
+                                accusamus fuga nostrum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='team'>
+            <div class='team-info'>
+                <p title='team-info-title'>
+                    Poznaj nasz zespół
+                </p>
+                <p title='team-info-paragrath'>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quidem rem fuga maxime quasi itaque autem libero odit corporis aliquid. Earum facilis error accusamus laudantium recusandae. Labore facere aut soluta!
+                </p>
+            </div>
+            <div class="container ">
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <div class='card'>
+                            <img src='./img/krzych.jpg' />
+                            <h2>
+                                Krzysztof<br> Szczęśniak
+                            </h2>
+                            <p>
+                                Założyciel, architekt
+                            </p>
+        
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='card'>
+                            <img src='./img/lewy.jpg' />
+                            <h2>
+                                ktoś  <br>ktoś 
+                            </h2>
+                            <p>
+                                Piłkarz,yk architekt
+                            </p>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='card'>
+                            <img src='./img/robert.jpeg' />
+                            <h2>
+                                ktoś <br> ktoś 
+                            </h2>
+                            <p>
+                                Doradca, architekt
+                            </p>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>
+                        <div class='card'>
+                            <img src='./img/krzych.jpg' />
+                            <h2>
+                                ktoś <br> ktoś 
+                            </h2>
+                            <p>
+                                Założyciel, architekt
+                            </p>
+        
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='card'>
+                            <img src='./img/lewy.jpg' />
+                            <h2>
+                                ktoś <br> ktoś 
+                            </h2>
+                            <p>
+                                Piłkarzyk, architekt
+                            </p>
+                        </div>
+                    </div>
+                    <div class='col-md-4'>
+                        <div class='card'>
+                            <img src='./img/robert.jpeg' />
+                            <h2>
+                                ktoś <br>ktoś 
+                            </h2>
+                            <p>
+                                Doradca, architekt
+                            </p>
+        
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            
+        </section>
     </main>
+    <div class='footer'>
+        <span><a href='#' target='_border' alt='facebook'>fb</a></span>
+        <span><a href='#' target='_border' alt='instagram'>instagram</a></span>
+        <span><a href='#' target='_border' alt='linkedin'>linkedin</a></span>
+        <span><a href='#' target='_border' alt='gadu-gadu'>gadu</a></span>
+        <div class='policy'>
+            <p>
+                2021 KS-Architektura
+            </p>
+        </div>
+    </div>
     
     
 

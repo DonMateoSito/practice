@@ -21,7 +21,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         :root{
-            --pink: #c21e56;
+            --red: #ec3545;
+            --dark-red: #d41b49;
         }
         body{
             margin: 0;
@@ -33,14 +34,16 @@
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            height: 35vh;
+            height: 30vh;
         }
         .contact p{
-            font-size: clamp(30px, 21vw, 100px);
+            font-size: clamp(30px, 21vw, 150px);
             text-align: center;
             color:white;    
-            position: relative;
-            top: 20%;
+             position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
 
         }
         .karta{
@@ -61,7 +64,7 @@
         }
 
         .email{
-            background-color: #EF233C;
+            background-color: var(--red);
             color:white;
             border: transparent;
             border-radius: 10px;
@@ -73,7 +76,7 @@
             margin-bottom: 15px;
         }
         .telefon{
-            background-color: #EF233C;
+            background-color:  var(--red);
             color:white;
             border: transparent;
             border-radius: 10px;
@@ -85,7 +88,7 @@
             font-size: clamp(10px,20vh, 20px);
         }
         .siedziby{
-            background-color: #EF233C;
+            background-color: var(--red);
             color: white;
             border: transparent;
             margin-bottom: 15px;
@@ -101,6 +104,7 @@
             border: none;
             color:white;
         }
+        /*
         .footer{
             background-color: var(--col-dark);
             font-size: clamp(10px,4vw,15px);
@@ -122,6 +126,7 @@
             
 
         }
+        */
         .container{
             background-color: white;
         }
@@ -133,27 +138,27 @@
         
         #zawAd{
             display: none;
-            background-color: var(--pink);
+            background-color: var(--dark-red);
             border-radius: 10px;
         }
         #bytAd{
             display: none;
-            background-color: var(--pink);
+            background-color: var(--dark-red);
             border-radius: 10px;
         }
         #warAd{
             display: none;
-            background-color: var(--pink);
+            background-color: var(--dark-red);
             border-radius: 10px;
         }
         #pozAd{
             display: none;
-            background-color: var(--pink);
+            background-color: var(--dark-red);
             border-radius: 10px;
         }
         #szcAd{
             display: none;
-            background-color: var(--pink);
+            background-color: var(--dark-red);
             border-radius: 10px;
         }
     </style>

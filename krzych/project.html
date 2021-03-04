@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="./style/main.css" type='text/css' rel='stylesheet' />
+    <link href="./style/button.css" type='text/css' rel='stylesheet' />
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,7 +54,7 @@
         .project-in-card{
             margin-top:5vh;
             margin-left: 100px;
-            height:min(400px,60vh) ;
+            height:auto ;
             width: min(400px,60vw);
             background-color: wheat;
             padding:5px;
@@ -61,7 +63,7 @@
         }
         .project-card{
             border:1px black solid; 
-            height:min(390px,55vh)
+            height:auto;
         }
         .project-card hr{
             width: 70%;
@@ -82,16 +84,18 @@
             font-weight: 900;
         }
         .project-card p[title='project-card-details']{
-            text-align: left;
+            text-align: center;
             font-size: clamp(15px, 5vw, 25px);
             font-weight: 600;
-            margin-left:20px;
+            margin-bottom: 10px;
+           
         }
         .project-card p[title='project-card-paragrath']{
             text-align: left;
-            font-size: clamp(15px, 3vw, 15px);
-            font-weight: 500;
-            margin-left:15px;
+            font-size: clamp(10px, 3vw, 15px);
+            font-weight: 700;
+            margin-top:5px;
+           
         }
         .project-no1-open{
             position: absolute;
@@ -118,12 +122,98 @@
             font-size: clamp(15px,5vw,25px);
             color: white;
             opacity: 0.8;
+        } 
+        .popout{
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00000080;
+            z-index: 1005;
         }
+        .popout-inside{
+            background-color: red;
+            width: 80%;
+            height: 400px;
+            position: fixed;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            z-index: 1006;
+            border-radius: 40px;
+        }
+        .popout-inside img{
+            position: fixed;
+            left:50%;
+            top:30%;
+            transform:translate(-50%,-30%);
+            display: block;
+            width: 150px;
+            height: 125px;
+            margin:0 auto;
+            animation-name: rotation-forward, rotation-backwards;
+            animation-delay: 1s,2s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            margin-bottom: 10px;
+        }
+        .popout-inside p{
+            position: absolute;
+            bottom: 0;
+            left:50%;
+            transform: translate(-50%);
+            font-size:clamp(15px,10vw,30px);
+            color: white;
+            text-align: center;
+            
+            
+        }
+        @media screen and (max-width: 590px) {
+             .popout{
+            display: block;
+        }
+        }
+
+        @keyframes rotation-forward {
+            from {
+            }
+            to {
+                
+                transform:rotate(90deg);
+                top:30%;
+                left: 20%;
+            }
+        }
+        @keyframes rotation-backwards {
+            from {
+
+
+            }
+            to {
+                left:50%;
+                top:30%;
+                transform:rotate(0deg);
+                transform:translate(-50%,-30%);
+                
+            }
+        }
+        #close-popout{
+            position: absolute;
+            background-color:white;
+            color:red;
+            border:none;
+            left:50%;
+            transform: translate(-50%);
+            
+        }
+        
     </STYLE>
 </head>
 <body>
-    <nav id='navbar' style='position:sticky;top:0;width:100%;z-index: 3; transition: top 0.3s;'
-        class='navbar bg-danger navbar-dark navbar-expand-lg'>
+    <nav id='navbar' style='position:sticky;top:0;width:100%;z-index: 1000; transition: top 0.3s;'
+        class='navbar bg-danger   navbar-dark navbar-expand-lg'>
         <a class='navbar-brand' href='./index.html'> HOME</a>
     
         <button class='navbar-toggler' type="button" data-toggle='collapse' aria-controls="mainmenu" aria-expanded="false"
@@ -165,6 +255,17 @@
     </section>
     <main>
         <div class='project-no1'>
+            <div class='popout' id='popout'>
+                <div class='popout-inside'><!--
+                    <button class='project-card-close' id='close-popout'>
+                        X
+                    </button>-->    
+                    <img src='./img/rotate.png'>
+                    <p>
+                        OBRÓĆ URZĄDZENIE
+                    </p>
+                </div>
+            </div>
             <button class='project-no1-open' id='open-card'>
                 info<br>projektu
             </button>
@@ -173,8 +274,10 @@
             </button>
             <!--<img src='./img/project-home1.jpg'>-->
             <div class='project-in-card' id='card'>
-                
                 <div class='project-card'>
+                    <!<button class='project-card-close' id='open'>
+                        X
+                    </button>
                     <p title='project-card-small-title'>
                         Dom Jednorodzinny
                     </p>
@@ -182,31 +285,64 @@
                         Exfalaraza Peperoni
                     </p>
                     <hr>
-                    
-                    <p title='project-card-details'>
-                        
-                    </p>
-                    <p title='project-card-paragrath'>
-                        Powieszchnia: 250m<sup>2</sup>
-                    </p>
-                    <p title='project-card-paragrath'>
-                        Pokoje: 5 (uzyj flexbox zeby sie zmieniały w prawo i do góry)
-                    </p>
-                    <p title='project-card-paragrath'>
-                        Parametr: watość
-                    </p>
-                    <p title='project-card-paragrath'>
-                        Parametr: watość
-                    </p>
-                    <p title='project-card-paragrath'>
-                        Parametr: watość
-                    </p>
+                    <div class='container p-3'>
+                        <div class='row'>
+                            <div class='col-sm-12'>
+                                <p title='project-card-details'>
+                                    Detale:
+                                </p>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12 col-md-6'>
+                                <p title='project-card-paragrath'>
+                                    Powieszchnia: 250m<sup>2</sup>
+                                </p>
+                            </div>
+                            <div class='col-sm-12 col-md-6'>
+                                <p title='project-card-paragrath'>
+                                    Pokoje: 5
+                                </p>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12 col-md-6'>
+                                <p title='project-card-paragrath'>
+                                    Parametr: watość
+                                </p>
+                            </div>
+                            <div class='col-sm-12 col-md-6'>
+                                <p title='project-card-paragrath'>
+                                    Parametr: watość
+                                </p>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-12 col-md-6'>
+                                <p title='project-card-paragrath'>
+                                    Parametr: watość
+                                </p>
+                            </div>
+                            <div class='col-sm-12 col-md-6'>
+                                <p title='project-card-paragrath'>
+                                    Parametr: watość
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </div>
     </main>
 
+    
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#close-popout').on('click', function (event) {
+                jQuery('#popout').toggle('show');
+            });
+        });
+    </script>
     <script>
         jQuery(document).ready(function () {
             jQuery('#open-card').on('click', function (event) {
@@ -215,17 +351,28 @@
         });
     </script>
     <script>
+        jQuery(document).ready(function () {
+            jQuery('#open').on('click', function (event) {
+                jQuery('#card').toggle('show');
+            });
+        });
+    </script>
+    
+    
+    <!--<script>
         var prevScrollpos = window.pageYOffset;
             window.onscroll = function () {
                 var currentScrollPos = window.pageYOffset;
                 if (prevScrollpos > currentScrollPos) {
                     document.getElementById("navbar").style.top = "0";
                 } else {
-                    document.getElementById("navbar").style.top = "-95px";
+                    document.getElementById("navbar").style.top = "-45px";
                 }
                 prevScrollpos = currentScrollPos;
             }
-    </script>
+    </script>-->
+    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

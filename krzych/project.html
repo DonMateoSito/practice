@@ -153,8 +153,8 @@
             width: 150px;
             height: 125px;
             margin:0 auto;
-            animation-name: rotation-forward, rotation-backwards;
-            animation-delay: 1s,2s;
+            animation-name: rotation-forward, rotation-backwards ;
+            animation-delay:1s, 2s;
             animation-duration: 0.5s;
             animation-fill-mode: forwards;
             margin-bottom: 10px;
@@ -167,13 +167,14 @@
             font-size:clamp(15px,10vw,30px);
             color: white;
             text-align: center;
+            font-weight: 900;
             
             
         }
         @media screen and (max-width: 590px) {
              .popout{
             display: block;
-        }
+            }
         }
 
         @keyframes rotation-forward {
@@ -182,8 +183,8 @@
             to {
                 
                 transform:rotate(90deg);
-                top:30%;
-                left: 20%;
+                top:27%;
+                left: 29%;
             }
         }
         @keyframes rotation-backwards {
@@ -275,7 +276,7 @@
             <!--<img src='./img/project-home1.jpg'>-->
             <div class='project-in-card' id='card'>
                 <div class='project-card'>
-                    <!<button class='project-card-close' id='open'>
+                    <button class='project-card-close' id='open'>
                         X
                     </button>
                     <p title='project-card-small-title'>

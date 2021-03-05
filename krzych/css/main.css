@@ -22,6 +22,9 @@
 
 body{
     background-color: transparent;
+    
+}
+nav{
     margin: 0;
     padding: 0;
 }
@@ -177,6 +180,14 @@ nav button{
     font-size: clamp(10px,6vw,30px);
     text-decoration: none;
     color:var(--col-white);
+}
+#social-icon{
+    opacity: 0.6;
+    margin:0 10px 0 10px;
+}
+#social-icon:hover{
+    opacity: 1;
+   
 }
 
 .policy{

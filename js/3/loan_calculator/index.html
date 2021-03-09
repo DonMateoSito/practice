@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+
+    <link href="./main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center ">Load Calculator</a>
+        </div>
+    </nav>  
+    <div class="container">
+        <div class="row">
+            <div class="col s12 ">
+                <div class="card red darken-1 ">
+                    <div class="card-image">
+                        <img  class="image" src="./calc.jpg" style="height: 25vh;">
+                    </div>
+                    <div class="card-content white-text">
+                        <span class="card-title">Welcome to the Loan Calculator!</span>
+                        <p>
+                            I will help you calculate how much you will have to give to the bank back, just tell us the details of your loan.
+                        </p>
+                    </div>
+                    <div class="card-action divStart">
+                        <a class="waves-effect waves-light btn btnStart">Let's begin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row insert">
+            <div class="col s12">
+                <div class="card red darken-1 ">
+                    <div class="card-content white-text">
+                        <span class="card-title">We will need some data</span>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input style="color:white;" placeholder="$" id="loanAmount" type="text" class="validate">
+                                        <label style="color:white;" for="first_name">Loan Amount ($)</label>
+                                    </div>
+                                    <div class="input-field col s6" >
+                                        <input id="loanRate" style="color:white;" placeholder="%"type="text" class="validate">
+                                        <label for="last_name" style="color:white;">Loan intrest rate (%)</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input style="color:white;" placeholder="1-32..." id="loanTime" type="text" class="validate">
+                                        <label style="color:white;" for="first_name">Time (months)</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect  waves-light btn btnCalculate">Calculate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row calculating">
+            <div class="col s12 ">
+                <div class="card red darken-1 ">
+                    <div class="card-content white-text">
+                        <span class="card-title">Calculating, please wait</span>
+                        <div class="waiting">
+                            <img  class="image" src="./calc.jpg" style="height: 200px;">
+                        </div>
+                        <div class="card-action">
+                            <a class="waves-effect  waves-light btn btnCalculating">Calculate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row calculated">
+            <div class="col s12 ">
+                <div class="card">
+                    <div class="card-content red-text">
+                        <span class="card-title">Results</span>
+                        <div class="card-content">
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row red accent-1">
+                                        <div class="input-field col s12">
+                                            <input style="color:white;" disabled value="I am not editable" id="monthlyDone" type="text" class="validate">
+                                            <label for="disabled" style="color:white;opacity: .9;">Monthly payment</label>
+                                        </div>
+                                    </div>
+                                    <div class="row red">
+                                        <div class="input-field col s12">
+                                            <input style="color:white;" disabled value="I am not editable" id="totalIntrestDone" type="text" class="validate">
+                                            <label style="color:white;opacity: .5;"  for="disabled">Total intrest</label>
+                                        </div>
+                                    </div>
+                                    <div class="row red accent-1">
+                                        <div class="input-field col s12">
+                                            <input style="color:white;" disabled value="I am not editable" id="totalPaymentDone" type="text" class="validate">
+                                            <label style="color:white;opacity: .9;" for="disabled">Total payment</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+ 
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="application/javascript" src="./app.js"></script>
+</body>
+</html>

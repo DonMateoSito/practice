@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 2rem;
+            background-color: #fff;
+        }
+        .container{
+            background-color: lightcoral;
+            width: 1000px;
+            height: 800px;
+            margin:0 auto;
+            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+        }
+        h2{
+            color:white;
+            opacity: 0.8;
+            font-size: clamp(20px,10vh,100px);
+            text-align: center;
+        }
+        .text{
+            color:white;
+            opacity: 0.8;
+            font-size: clamp(25px,7vh,30px);
+            text-align: center;
+        }
+        .input{
+            display: block;
+            margin:0 auto;
+            font-size: 32px;
+            border-radius: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        .message{
+            text-align: center;
+            color:white;
+            font-size: 25px;
+        }
+        .input:focus{
+            outline: none;
+            border:3px solid purple;
+        }
+        .btn{
+            display: block;
+            margin: 0 auto;
+            font-size: 32px;
+            border: none;
+            border-radius: 50px;
+            margin-top: 10px;
+        }
+        .btn:focus{
+            outline: none;
+            border:3px solid purple;
+        }
+        .p{
+            font-size: 20px;
+            background-color: red;
+            color:white;
+            border-radius: 50px;
+            height: auto;
+            padding: 20px;
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20px;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Number Guesser
+        </h2>
+        <p class='text'>
+            Guess the number between <span class="min"></span> and <span class="max"></span>.
+        </p>
+        <form>
+            <input class="input" placeholder="Type a number" type='text'>
+            <button class="btn" type="submit">Guess</button>
+        </form>
+        <p class="message">
+            
+        </p>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

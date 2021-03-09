@@ -1,0 +1,128 @@
+/* 
+COLOURS:
+BLUE:       #0D3B66
+WHITE:      #FAF0CA
+YELLOW:     #F4D35E
+ORANGE:     #EE964B
+RED:        #F95738
+
+FONTS:
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+
+*/
+
+:root{
+    /*COLOURS*/
+    --blue:     #0D3B66 ;
+    --white:    #FAF0CA ;
+    --yellow:   #F4D35E ;
+    --orange:   #EE964B ;
+    --red:      #F95738 ;
+    
+    /* TEST */
+    --border: 3px solid PURPLE; 
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+.container{
+    box-sizing: border-box;
+    border:1px solid ;
+    background-color:var(--white);
+    font-family: 'Oswald', sans-serif;
+    
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 4px 3px 37px -4px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 4px 3px 37px -4px rgba(0,0,0,0.64);
+    -moz-box-shadow: 4px 3px 37px -4px rgba(0,0,0,0.64);
+
+}
+.flex1{
+    flex-direction: column;
+    flex:2;
+}
+.flex2{
+    flex-direction: row;
+    flex:1;
+}
+.flex3{
+    flex-direction: row;
+    flex:1;
+}
+.card{
+    background-color: var(--yellow);
+    padding: 10px;
+    border:1px solid black;
+    text-align: center;
+}
+
+.welcome{
+    border:var(--border);
+}
+
+
+
+
+.card-main-title{
+    font-size: clamp(20px,3vw,35px);
+}
+.card-side-title{
+    font-size: clamp(20px,3vw,30px);
+}
+.card-paragrath{
+    font-size: clamp(18px,2vw,25px);
+}
+
+.btn{
+    display: block;
+    margin:0 auto;
+    background-color: var(--blue);
+    color:#fff;
+
+    border-radius: 0;
+    border:none;
+
+    height: 50px;
+    width: 100px;
+
+}
+.task-link{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.task-list{
+    min-height: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin:20px;
+    position: relative;
+
+}
+.task-item{
+    background-color: tomato;
+    font-size: 20px;
+}
+.task-input{
+    margin: 10px;
+    height: 50px;
+    font-size: 20px;
+    background-color: var(--yellow);
+}

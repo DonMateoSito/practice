@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | SELECTORS</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: rgb(105, 187, 105);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            height: 100px;
+            padding: 2rem;
+        }
+        nav h1{
+            text-align: center;
+            font-weight: 900;
+            font-size: 2rem;
+            line-height: 5px;
+            color:white;
+        }
+        nav p{
+            text-align: center;
+            line-height: 1px;
+            color:white;
+            opacity: 0.8;
+        }
+        .container{
+            border:1px solid #ccccccaa;
+            padding: 5px;
+            margin:15px ;
+            width: 550px;
+            
+        }
+        .task-maker{
+            width: 410px;
+            height: auto;
+            margin: 0 auto;
+            
+            
+        }
+        .task{
+            font-size: 25px;
+            width: 404px;
+            height: 50px;
+            border-radius: 0;
+            border:1px solid #55aa55;
+            background-color: #119911;
+            color:white;
+            text-align: center;
+        }
+        .task:focus{
+            outline:none;
+        }
+        .task-button{
+            font-size: 20px;
+            padding: 10px;
+            display: block;
+            height: auto;
+            background-color: yellowgreen;
+            border:none;
+            color: #ffffffaa;
+            margin:0 auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .task-list-ul{
+            
+            width: 500px;
+            padding: 0;
+            border:2px solid white;
+            background-color: #55aa55aa;
+            list-style-type: none;
+            margin-left:auto;
+            margin-right: auto;
+
+        }
+        .task-list-li{
+            padding: 5px;
+            border-bottom:1px solid #ffffffaa;
+            position: relative;
+
+        }
+        .task-list-text{
+            display: inline;
+            margin-left: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        .task-list-link{
+            position: absolute;
+            right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .task-para{
+            text-align: center;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1>
+                JAVASCRIPT SELECTORS
+            </h1>
+            <p>
+                learn how to use them easly!
+            </p>
+        </header>
+    </nav>
+    <div class="container">
+        <div class="task-maker">
+            <h2 class="task-para">
+                WRITE A TASK TO ASSING
+            </h2>
+            <input  class="task" type='textarea' value="">
+            <button class='task-button'>
+                Assing
+            </button>
+        </div>
+        <div class="task-list">
+            <ul class="task-list-ul">
+                <li class="task-list-li">
+                    <p class='task-list-text'>
+                        
+                    </p>
+                    <a href="#" class='task-list-link'>x</a>
+                </li>
+                <li class="task-list-li">
+                    <p class='task-list-text'>
+                        
+                    </p>
+                    <a href="#" class='task-list-link'>x</a>
+                </li>
+                <li class="task-list-li">
+                    <p class='task-list-text'>
+                       
+                    </p>
+                    <a href="#" class='task-list-link'>x</a>
+                </li>
+                <li class="task-list-li">
+                    <p class='task-list-text'>
+                       
+                    </p>
+                    <a href="#" class='task-list-link'>x</a>
+                </li>
+                <li class="task-list-li">
+                    <p class='task-list-text'>
+                        
+                    </p>
+                    <a href="#" class='task-list-link'>x</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src='./app.js'></script>
+</body>
+</html>

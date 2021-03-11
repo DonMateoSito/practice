@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <!-- libs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 ">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-fluid" style="height: 25vh; object-fit: cover;" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1453&q=80">
+                        <span class="text-title card-title">Online Library</span>
+                    </div>
+                    <div class="card-content list-card">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati doloremque facilis itaque ipsa officia nulla natus ullam?
+                        </p>
+                        <h4>
+                            Add Books
+                        </h4>
+                        <div class="row mainRow">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="bookName" type="text" class="">
+                                        <label for="last_name">Book name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="author" type="text" class="">
+                                        <label for="last_name">Author</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="number" type="text" class="">
+                                        <label for="disabled">ISBN</label>
+                                    </div>
+                                </div>
+                                <a class="waves-effect waves-light btn" id="btn">Add</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>ISBN</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookList">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

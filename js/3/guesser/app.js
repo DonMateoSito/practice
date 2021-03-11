@@ -3,7 +3,7 @@ let     min = 1,
         max = 10,
         winningNum = 5,//Math.floor(Math.random()*10 +1),
         guessesLeft = 3;
-
+        
 //ui var
 const   
         UIinput = document.querySelector('.input'),

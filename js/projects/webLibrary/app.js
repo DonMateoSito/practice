@@ -45,6 +45,7 @@ function alert(message, clas){
         ,1500);
 }
 
+
 document.getElementById('btn').addEventListener('click', function(e){
     const   title = document.getElementById('bookName').value,
             author = document.getElementById('author').value,
@@ -66,3 +67,4 @@ document.getElementById('bookList').addEventListener('click', function(e){
     ui.removeBook(e.target.parentElement);
     e.preventDefault();
 });
+

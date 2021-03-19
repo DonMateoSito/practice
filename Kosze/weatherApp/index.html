@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Weather APP</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <div class="container">
+          <div class="card">
+               <div id="weather">
+                    <h1>Simple Weather</h1>
+                    <h5 id='parent'></h5>
+                    <table class="u-full-width">
+                         <thead>
+                              <th>
+                                   imageOf:
+                              </th>
+                              <th>
+                                   City:
+                              </th>
+                              <th>
+                                   Temperature:
+                              </th>
+                              <th>
+                                   Wind:
+                              </th>
+                              <th>
+                                   Pressure:
+                              </th>
+                         </thead>
+                         <tbody id='tbody'>
+                              
+                         </tbody>
+                    </table>
+               </div>
+               <form>
+                    <input class="u-full-width input" type='text' placeholder="City...">
+                    <label>Please type your location</label>
+                    <input class="button-primary btn" type="submit" value="submit input">
+               </form>
+          </div>
+     </div>
+     
+     <script src="./weather.js"></script>
+     <script src="./UI.js"></script>
+     <script src="./main.js"></script>
+
+</body>
+</html>

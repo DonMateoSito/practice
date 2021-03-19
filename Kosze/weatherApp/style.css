@@ -1,0 +1,15 @@
+.container{
+     
+}
+#weather{
+     padding: 10px;
+}
+#alert{
+     background-color: red;
+     padding: 10px;
+     color: white;
+     border-radius: 50px;
+     text-align: center;
+
+
+}

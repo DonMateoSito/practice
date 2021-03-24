@@ -1,0 +1,1 @@
+cout<<"Zmienna wartosc: "<<zmienna<<endl;

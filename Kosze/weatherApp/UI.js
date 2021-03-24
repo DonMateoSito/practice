@@ -21,15 +21,25 @@ class UI{
           const table = this.div
           const addOn = 'http:'
           const weatherStatus = addOn+data.current.condition.icon
-          table.innerHTML = `
-               <tr>
-                    <td><img src='${weatherStatus}' alt='current weather' ><br>${data.current.condition.text}</td>
-                    <td>${data.location.name} <br><img src='https://www.countryflagicons.com/FLAT/24/DE.png'</td>
-                    <td>${data.current.temp_c}<span>&deg<span>C,<br> ${data.current.temp_f}<span>&deg<span>F</td>
-                    <td>${data.current.wind_kph} km/h,<br>${data.current.wind_mph} mp/h</td>
-                    <td>${data.current.pressure_mb} hPa</td>
-               </tr>
-          `
+          const getKeyByValue = (object, value)=> Object.keys(object).find(key => object[key] === value)
+          
+          const getLocation = async ()=>{ //dodaj pierwszą wielką litere
+               const conList = await fetch('countries.json')
+               const getList = await conList.json()
+               const country = await data.location.country
+               return getKeyByValue(getList, country)
+          }
+          getLocation()
+               .then(returned =>{
+                    table.innerHTML = `
+                         <tr>
+                              <td class="td-p"><img src='${weatherStatus}' alt='current weather' ><br>${data.current.condition.text}</td>
+                              <td class="td-p">${data.location.name} <br><img alt='' src='https://www.countryflagicons.com/FLAT/48/${returned}.png'</td>
+                              <td class="td-p">${data.current.temp_c}<span>&deg<span>C,<br> ${data.current.temp_f}<span>&deg<span>F</td>
+                              <td class="td-p">${data.current.wind_kph} km/h,<br>${data.current.wind_mph} mp/h</td>
+                              <td class="td-p">${data.current.pressure_mb} hPa</td>
+                         </tr>
+                    `
+               })    
      }
-     
 }
